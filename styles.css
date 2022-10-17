@@ -1,0 +1,312 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Mukta', sans-serif;
+	font-family: 'Rubik', sans-serif;
+}
+
+
+.container {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(180,180,180,1) 50%, rgba(250,250,250,1) 100%);
+	border-radius: 50px;
+}
+
+.container-header {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-h1, .header-h2, .header-h3 {
+	padding: 20px;
+}
+.header-h1 {
+	font-size: 40px;
+}
+.header-h2 {
+	font-size: 30px;
+}
+.header-h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.header-img-container {
+	padding: 20px;
+	width: 400px;
+}
+
+.header-img-container > p{
+	text-align: center;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.header-img-container > img{
+	height: 100%;
+	width: 100%;
+	object-fit: scale-down;
+	border-radius: 5%;
+}
+
+.header-intro {
+	margin: 20px;
+	font-size: 20px ;
+	padding: 10px;
+	width: 70vw;
+	border-left: 15px solid #aaa;
+}
+
+.container-aside {
+	box-sizing: border-box;
+	position: sticky;
+	width: 20%;
+	left: 80%;
+	top: calc((100% - 576px) / 2);
+}
+
+.nav {
+	background: #EBF7FF;
+	display: flex;
+	flex-wrap: wrap;
+	height: fit-content;
+}
+
+.nav > a {
+	padding: 3px;
+	text-align: center;
+	font-size: 18px;
+	flex-grow: 1;
+	flex-basis: 300px;
+	text-decoration: none;	
+	color: #111;
+	border: 1px solid #555;
+	height: fit-content;
+}
+
+a:hover {	
+	color: #fff;
+	background: #2196FD;
+	transition: background 1s, color 0.2s;
+}
+
+.Biografia, .Tesis, .Solucion, .Oracle, .Analisis, .Estudios, .Prueba, .Cibernetica,
+.Patrones, .Homosexualidad, .Reconocimiento, .Ajedrez {
+	position: relative;
+	top: -400px;
+	box-sizing: border-box;
+	margin: 10px;
+	font-size: 20px;
+	border: 1px solid #bbb;
+	padding: 20px;
+	background: #EBF7FF;
+	width: 78%;
+}
+
+.Title {
+	margin: 20px 0;
+}
+
+section > h3, article > h3 {
+	margin: 15px 0;
+}
+
+.intro, .infancia, .estudios, .christopher, .universidad {
+	margin: 20px 0;
+}
+
+.universidad {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	grid-template-rows: auto 1fr;
+}
+
+.universidad > h3{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+.universidad > p{
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.uni-img {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+	font-style: italic;
+}
+
+.preguntas {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 22px;
+	color: #33F;
+}
+
+.Analisis {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 1fr 250px;
+	grid-gap: 20px;
+}
+
+.Analisis > h2 {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+.a-up {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+}
+
+.a-back {
+	grid-row: 3 / 4;
+	grid-column: 1 / 3;
+}
+
+.enigma-img {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	margin: auto 0;
+	font-style: italic;
+}
+
+.enigma-img > img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.Estudios {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 300px 1fr;
+	grid-gap: 20px;
+}
+.Estudios > h2 {
+	grid-row: 1 / 2;
+	grid-column: 1 / 3;
+}
+
+.e-up {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+
+.e-back {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+}
+
+.test-img {
+	grid-row: 2 / 4;
+	grid-column: 1 / 2;
+	margin: auto 0;
+	font-style: italic;
+}
+
+.test-img > img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.Prueba {
+	display: flex;
+}
+.estatua-img{
+	margin: auto 0 auto 20px;
+	font-style: italic;
+}
+
+.Homosexualidad {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 1fr 250px;
+	grid-gap: 20px;
+}
+
+.Homosexualidad > h2 {
+	grid-row: 1 / 2;
+	grid-column: 1 / 3;
+}
+.homo-up {
+	grid-row: 2 / 3;
+	grid-column: 1 / 3;
+}
+.homo-mid {
+	margin: auto;
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+}
+.homo-down {
+	grid-row: 4 / 5;
+	grid-column: 1 / 3;
+}
+.monumento-img {
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	font-style: italic;
+}
+.monumento-img > img {
+	width: 100%;
+	object-fit: scale-down;
+}
+
+.Reconocimiento {
+	display: grid;
+	grid-template-rows: repeat(auto,4);
+	grid-template-columns: 250px 1fr 250px;
+	grid-auto-rows: auto;
+	grid-gap: 20px;
+}
+
+.Reconocimiento > h2 {
+	margin: 20px 0;
+	grid-row: 1 / 2;
+	grid-column: 1 / 4;
+}
+.placa-img {
+	grid-row: 2 / 3;
+	grid-column: 1 / 2;
+	font-style: italic;
+}
+.estatua2-img {
+	grid-row: 2 / 4;
+	grid-column: 3 / 4;
+	font-style: italic;
+}
+.placa-img > img, .estatua2-img > img {
+	width: 100%;
+	object-fit: scale-down;
+}
+.r-1 {
+	margin: auto;
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+}
+.r-2 {
+	grid-row: 3 / 4;
+	grid-column: 1 / 3;
+}
+.r-3 {
+	grid-row: 4 / 5;
+	grid-column: 1 / 4;
+}
+
+.Reconocimiento > h3 {
+	margin: auto 20px;
+	grid-column: 1 / span 3;
+}
+
+.r-4 {
+	margin: auto 20px;
+	grid-column: 1 / span 3;
+}
+
+article:hover {
+	background: #EFF9FB;
+}
